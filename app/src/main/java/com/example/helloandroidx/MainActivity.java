@@ -7,7 +7,9 @@ import android.widget.Button;
 
 import java.util.Date;
 
-public class MainActivity extends AppCompatActivity {
+import aplimovil.com.helloandroidx.R;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         button = (Button)findViewById(R.id.button);
         button.setOnClickListener(this);
-        updateTime();
+        //updateTime();
+        button.setText("Bienvenido");
     }
 
     private void updateTime() {
