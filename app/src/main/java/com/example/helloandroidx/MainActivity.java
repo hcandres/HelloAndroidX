@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.sql.Time;
 import java.util.Date;
 
 import aplimovil.com.helloandroidx.R;
@@ -17,17 +18,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         button = (Button)findViewById(R.id.button);
         button.setOnClickListener(this);
-        //updateTime();
+        updateTime();
         button.setText("Bienvenido");
     }
 
     private void updateTime() {
-        button.setText(new Date().toString);
+        button.setText(new Date().toString());
     }
 
     @Override
     public void onClick(View v) {
 
-        //updateTime();
+        updateTime();
     }
 }
